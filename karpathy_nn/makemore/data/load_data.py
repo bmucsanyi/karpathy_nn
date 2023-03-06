@@ -9,3 +9,7 @@ def load_names() -> list[str]:
     data = data.splitlines()
 
     return data
+
+def load_shakespeare() -> str:
+    """Returns a concatenation of all works of Shakespeare as a single string."""
+    return pkg_resources.read_text("karpathy_nn.makemore.data", "shakespeare.txt")
